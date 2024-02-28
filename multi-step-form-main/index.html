@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Multi-step form</title>
+</head>
+<body>
+
+  <main>
+    <div class="mobile-head"></div>
+    <div class="board">
+      <!-- steps -->
+      <section class="user-steps" id="details">
+        <ul>
+          <li class="steps">
+            <span class="current-step active-step">1</span>
+            <div class="steps-advance">
+              <p>Step 1</p>
+              <p>Your info</p>
+            </div>
+          </li>
+          <li class="steps">
+            <span class="current-step">2</span>
+            <div class="steps-advance">
+              <p>Step 2</p>
+              <p>Select plan</p>
+            </div>
+          </li>
+          <li class="steps">
+            <span class="current-step">3</span>
+            <div class="steps-advance">
+              <p>Step 3</p>
+              <p>Add-ons</p>
+            </div>
+          </li>
+          <li class="steps">
+            <span class="current-step">4</span>
+            <div class="steps-advance">
+              <p>Step 4</p>
+              <p>Summary</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- steps -->
+      <!-- step 1 begins-->
+      <div class="new">
+        <section class="step-1 details active" id="details">
+          <h1>Personal info</h1>
+          <p class="sub-heading">Please provide your name, email address, and phone number.</p>
+          <!-- form -->
+          <form action="">
+            <div class="label-name">
+              <p>Name</p>
+              <p class="name-error error">This field is required</p>
+            </div>
+            <input type="text" id="name" class="user-input user-name" required placeholder="e.g. Stephen King">
+            <div class="label-name">
+              <p>Email Address</p>
+              <p class="mail-error error">This field is required</p>
+            </div>
+            <input type="email" id="mail" class="user-input user-email" placeholder="e.g. stephenking@lorem.com">
+            <div class="label-name">
+              <p>Phone Number</p>
+              <p class="number-error error">This field is required</p>
+            </div>
+            <input type="tel" id="number" class="user-input user-tel" placeholder="e.g. +1 234 567 890 ">
+          </form>
+          <!-- form -->
+        </section>
+        <!-- step 1 ends -->
+        <!-- step 2 begins -->
+        <section class="step-2 details" id="details">
+          <h1>Select your plan</h1>
+          <p class="sub-heading">You have the option of monthly or yearly billing.</p>
+          <div class="option">
+            <div class="opt-child" data-key="9" data-name="Arcade">
+              <img src="assets/images/icon-arcade.svg" alt="icon-arcade">
+              <div class="more-div">
+                <p>Arcade</p>
+                <p>$9/mo</p>
+              </div>
+            </div>
+            <div class="opt-child" data-key="12" data-name="Advance">
+              <img src="assets/images/icon-advanced.svg" alt="icon-advanced">
+              <div class="more-div">
+                <p>Advanced</p>
+                <p>$12/mo</p>
+              </div>
+            </div>
+            <div class="opt-child" data-key="15" data-name="Pro">
+              <img src="assets/images/icon-pro.svg" alt="icon-pro">
+              <div class="more-div">
+                <p>Pro</p>
+                <p>$15/mo</p>
+              </div>
+            </div>
+          </div>
+          <div class="sub-range">
+            <p class="month duration duration-active">Monthly</p>
+            <input type="checkbox" name="" id="toggle" class="togg-check">
+            <label for="toggle" class="togg"></label>
+            <p class="year duration">Yearly</p>
+          </div>
+        </section>
+        <!-- step 2 ends -->
+        <!-- step 3 begins -->
+        <section class="step-3 details" id="details">
+          <h1>Pick addons</h1>
+          <p class="sub-heading">Add-ons help enhance your gaming experience.</p>
+          <div class="addon-wrap">
+            <div class="addon" data-price="1" data-name="online services">
+              <div class="addon-check">
+                <input type="checkbox"  class="check-addon" id="addons">
+              </div>
+              <div class="addon-desc">
+                <p>Online service</p>
+                <p>Access to multiplayer games</p>
+              </div>
+              <p class="charge">+$1/mo</p>
+            </div>
+            <div class="addon" data-price="2" data-name="Larger storage">
+              <div class="addon-check">
+                <input type="checkbox"  class="check-addon" id="addons"></div>
+              <div class="addon-desc">
+                <p>Larger storage</p>
+                <p>Extra 1TB of cloud save</p>
+              </div>
+              <p class="charge">+$2/mo</p>
+            </div>
+            <div class="addon" data-price="2" data-name="Customizable Profile">
+              <div class="addon-check">
+                <input type="checkbox"  class="check-addon" id="addons"></div>
+              <div class="addon-desc">
+                <p>Customizable Profile</p>
+                <p>Custom theme on your profile</p>
+              </div>
+              <p class="charge">+$2/mo</p>
+            </div>
+          </div>
+        </section>
+        <!-- step 3 ends -->
+        <!-- step 4 begins -->
+        <section class="step-4 details" id="details">
+          <h1>Finishing up</h1>
+          <p class="sub-heading">Double-check everything looks OK before confirming.</p>
+          <div class="arcade">
+            <div class="arc-1">
+              <div>
+                <p class="arc-month">Arcade monthly</p>
+                <a href="#" class="arc-change">Change</a>
+              </div>
+              <p class="arc-price"></p>
+            </div>
+            <div class="arc-2">
+              <div class="arc-online"></div>
+              <div class="choosen"></div>
+            </div>
+          </div>
+          <div class="arc-total">
+            <p>Total (Per month)</p>
+            <p class="round">12$/month</p>
+          </div>
+        </section>
+        <!-- step 4 ends -->
+        <!-- Thank you -->
+        <section class="details step-5" id="details">
+          <div>
+            <img src="assets/images/icon-thank-you.svg" alt="">
+            <h1>Thank you!</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, necessitatibus officia nihil optio itaque eius cum ex vero fuga quod dolorum nesciunt dolorem aliquam eligendi sapiente dignissimos aut cumque cupiditate.</p>
+          </div>
+        </section>
+        <!-- Thank you -->
+        <div class="btn-container">
+          <p class="back" id="prev-btn">Go Back</p>
+          <button class="next-btn" id="next-btn">Next Step</button>
+        </div>
+      </div>
+      <!-- info -->
+    </div>
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="main.js"></script>
+</body>
+</html>
