@@ -1,14 +1,14 @@
 @font-face {
     font-family: ubuntu-Bold;
-    src: url(/multi-step-form-main/assets/fonts/Ubuntu-Bold.ttf);
+    src: url(assets/fonts/Ubuntu-Bold.ttf);
 }
 @font-face {
     font-family: ubuntu-Medium;
-    src: url(/multi-step-form-main/assets/fonts/Ubuntu-Medium.ttf);
+    src: url(assets/fonts/Ubuntu-Medium.ttf);
 }
 @font-face {
     font-family: ubuntu-Regular;
-    src: url(/multi-step-form-main/assets/fonts/Ubuntu-Regular.ttf);
+    src: url(assets/fonts/Ubuntu-Regular.ttf);
 }
 
 :root {
